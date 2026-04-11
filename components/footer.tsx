@@ -137,9 +137,9 @@ export function Footer() {
                 { name: "About", href: "/about" },
                 { name: "Journal", href: "/journal" },
                 { name: "Contact", href: "/contact" },
-                { name: "Privacy Policy", href: "/privacy" },
-                { name: "Affiliate Disclosure", href: "/disclosure" },
-                { name: "Terms of Service", href: "/terms" },
+                { name: "Privacy", href: "/privacy" },
+                { name: "Disclosure", href: "/disclosure" },
+                { name: "Terms", href: "/terms" },
               ].map((l) => (
                 <li key={l.href}>
                   <Link href={l.href} className="text-sm text-white/50 hover:text-[#00FF88] transition-colors font-sans">{l.name}</Link>
