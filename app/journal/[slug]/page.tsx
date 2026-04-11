@@ -8,6 +8,7 @@ import { AffiliateDisclosureBanner } from "@/components/review/affiliate-disclos
 import { SocialShare } from "@/components/article/social-share"
 import { articles } from "@/lib/articles"
 import { buildArticleSchema, buildBreadcrumbSchema, schemaToScript } from "@/lib/schema"
+import { markdownToHtml } from "@/lib/markdown"
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://cybertechvault.com"
 
@@ -105,7 +106,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
               prose-strong:text-[#F0FDF4]
               prose-ul:text-[#94A3B8] prose-ol:text-[#94A3B8]
               prose-li:marker:text-[#00FF88]"
-            dangerouslySetInnerHTML={{ __html: article.content }}
+            dangerouslySetInnerHTML={{ __html: markdownToHtml(article.content) }}
           />
 
           <div className="mt-12 pt-8 border-t border-white/10">
