@@ -1,0 +1,16 @@
+{
+  "name": "CyberTechVault",
+  "short_name": "CyberTechVault",
+  "description": "Compare the world's best VPNs, password managers, antivirus tools, and identity protection. Expert-tested. Independently reviewed.",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#080C10",
+  "theme_color": "#00FF88",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
