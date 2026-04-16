@@ -1473,6 +1473,944 @@ The combined monthly cost of a solid security stack is less than a single restau
 
 *NorwegianSpark SA | We test everything we recommend. Affiliate links are disclosed on every page.*
     `
+  },
+  {
+    id: 23,
+    slug: "best-vpn-security-2026",
+    title: "Best VPN for Privacy and Security in 2026: NordVPN vs Surfshark vs the Rest",
+    description: "VPN for cybersecurity — not just streaming. Audited no-logs, RAM-only servers, kill switches, and jurisdictions outside surveillance alliances.",
+    category: "vpn",
+    author: "thomas",
+    datePublished: "2026-04-15",
+    dateModified: "2026-04-15",
+    readTime: 11,
+    featured: false,
+    tags: ["vpn", "privacy", "security", "nordvpn", "surfshark"],
+    affiliateSlugs: ["nordvpn", "surfshark"],
+    content: `
+## Why a VPN Is a Security Tool, Not a Streaming Hack
+
+Most VPN coverage online focuses on unblocking Netflix libraries. That framing misses the point. A VPN is a cybersecurity control — it encrypts traffic your ISP and every intermediate network can otherwise observe, and it decouples your real IP from the services you use. Streaming is a side-effect. In 2026, with public Wi-Fi still routinely misconfigured and ISP data resale legal in most of the US, the security case for a VPN is stronger than it has ever been.
+
+We have spent years testing VPNs at [CyberTechVault](/), and the criteria that matter for security are narrow. Audit history, server architecture, leak protection, and jurisdiction. Everything else is marketing.
+
+## What to Actually Look For
+
+**Audited no-logs policy.** Marketing claims are worthless. What matters is whether an independent auditor — PwC, Deloitte, Cure53 — has inspected the servers and the code. NordVPN, Surfshark, ProtonVPN, and Mullvad all have published third-party audits. Most others do not.
+
+**RAM-only servers.** Traditional servers write to disk, which means seized hardware can be forensically analysed. RAM-only servers wipe on every reboot. NordVPN and ExpressVPN run full RAM-only fleets. This is infrastructure, not a promise.
+
+**Kill switch — and test it.** Every reputable VPN claims a kill switch. Not all of them actually block traffic when the tunnel drops. Force a disconnection, run a leak test, and verify. Do this yourself before trusting any provider.
+
+**DNS leak protection.** A VPN that tunnels your traffic but leaves DNS queries going to your ISP defeats the purpose. Verify at dnsleaktest.com and ipleak.net.
+
+**Jurisdiction.** Panama (NordVPN), the British Virgin Islands (ExpressVPN), Switzerland (ProtonVPN), and Sweden (Mullvad) sit outside the Five/Nine/Fourteen Eyes surveillance alliances. US and UK based VPNs operate under data-sharing frameworks that undermine no-logs claims regardless of audit.
+
+## NordVPN — Our Default Recommendation
+
+In 2018, a third-party server at a NordVPN datacentre was accessed through a misconfigured management interface. The incident is worth reading about because of what was *not* found — no user credentials, no logs, no activity data. A Deloitte audit in 2023 reconfirmed the no-logs architecture. Threat Protection adds DNS-level malware and tracker blocking without requiring a tunnel. NordLynx, their WireGuard implementation, consistently posts the lowest speed overhead in our tests.
+
+If you want one recommendation and you want to stop thinking about it: [NordVPN](/go/nordvpn). The 2-year plan is the sweet spot on price.
+
+## Surfshark — Unlimited Devices Done Right
+
+Surfshark is the value pick. Nexus, their multi-hop routing, sends traffic through two servers for an extra layer of separation. CleanWeb blocks malware and trackers. Deloitte audited their no-logs policy in 2023. The killer feature for households is unlimited simultaneous connections — every phone, laptop, tablet, and router in the house under one subscription. For a family or a small team, the math is brutal in Surfshark's favour.
+
+Pick it if your household has more than five devices or you want the cheapest credible VPN: [Surfshark](/go/surfshark).
+
+## The Rest — Briefly
+
+ProtonVPN's Swiss jurisdiction and open-source apps appeal to privacy purists. Mullvad's anonymous account model — you get a number, not an email — is unique in the industry; pay in cash if you want to. ExpressVPN has the most polished apps and best streaming reliability, at a price. CyberGhost and PIA are acceptable, but neither matches the top three on audit transparency.
+
+## The Simple Answer
+
+Start with [NordVPN](/go/nordvpn). If you need to cover a large household, [Surfshark](/go/surfshark). Pair either with a [password manager](/journal/what-is-password-manager) and 2FA and you have closed the three largest attack surfaces an individual faces in 2026.
+    `
+  },
+  {
+    id: 24,
+    slug: "nordpass-review-2026",
+    title: "NordPass Review 2026: Is Nord's Password Manager Worth It?",
+    description: "NordPass from the team behind NordVPN. Zero-knowledge XChaCha20 encryption, Cure53 audit, passkeys, and a breach scanner. Full review.",
+    category: "password-managers",
+    author: "oyvind",
+    datePublished: "2026-04-15",
+    dateModified: "2026-04-15",
+    readTime: 9,
+    featured: false,
+    tags: ["password-manager", "nordpass", "review", "security"],
+    affiliateSlugs: ["nordpass"],
+    content: `
+## Short Answer
+
+NordPass is a polished, secure, well-priced password manager from the same company as NordVPN. If you already use NordVPN — or you want a single vendor for your security stack — [NordPass](/go/nordpass) is the easiest recommendation we can make. Rating: 4.2/5.
+
+## Who Makes It
+
+NordPass is built by Nord Security, the Panama-based group behind NordVPN, NordLocker, and NordLayer. That matters because the same engineering team that has survived a decade of scrutiny from researchers, regulators, and journalists is responsible for your vault.
+
+## Security Architecture
+
+Encryption is **XChaCha20** — a modern stream cipher favoured over AES by cryptographers building new systems today. Authentication uses Argon2, which is deliberately slow to make master-password brute-forcing expensive.
+
+The architecture is **zero-knowledge**. Your vault is encrypted on your device before it ever reaches Nord's servers. Nord cannot read it. If they are compelled to hand over data, they hand over ciphertext.
+
+Cure53 — the Berlin security firm that has audited ProtonMail, 1Password, and Mullvad — audited NordPass and published the report. Audits are the only form of trust that survives contact with reality.
+
+## What You Get
+
+- **Unlimited passwords** across unlimited devices on paid plans.
+- **Password generator** up to 60 characters with granular control over symbol classes.
+- **Autofill** via browser extensions for Chrome, Firefox, Edge, Safari, and Brave.
+- **Passkey support**, added in 2023, stores FIDO2 credentials alongside traditional passwords — this is the future of authentication and NordPass was early.
+- **Data breach scanner** on paid plans cross-references your vault against known breach corpora and flags reused passwords and compromised credentials.
+- **Secure sharing** lets you share an item without exposing the password — the recipient uses it through autofill without ever seeing the plaintext.
+- **Emergency access** allows a trusted contact to recover your vault after a waiting period.
+- **2FA** via authenticator app or hardware key. Biometric unlock on mobile.
+
+## Pricing
+
+- **Free** — 1 active device, unlimited passwords. Usable but limiting.
+- **Premium** — $2.49/month on the annual plan. This is where almost everyone should start.
+- **Family** — $4.99/month for 6 users. Best-in-class family pricing.
+
+The common Nord ecosystem bundle — NordVPN + NordPass + NordLocker — is the best price anywhere for a full privacy stack.
+
+## Versus the Competition
+
+**Bitwarden** is open source and free for unlimited devices. If ideology and cost are your priorities, Bitwarden wins. NordPass is more polished, has better autofill, and has a friendlier onboarding for non-technical family members.
+
+**1Password** is more feature-dense — Travel Mode, Watchtower, Secrets Automation — and has the most mature enterprise offering. It costs more and can feel overwhelming for a single user. NordPass is simpler and cheaper for equivalent security.
+
+## What Could Be Better
+
+The Linux desktop app lags behind the Windows and Mac builds. The secure notes feature could handle richer formatting. Reporting for families is thin compared to 1Password's console.
+
+## Verdict
+
+Security is strong and audited. Features cover every real-world use case. Pricing is aggressive without feeling cheap. If you are already inside the Nord ecosystem the case is obvious. If you are starting fresh and want a password manager that works on day one without a learning curve, [NordPass](/go/nordpass) is the right choice.
+
+Related reading: [What Is a Password Manager](/journal/what-is-password-manager), [Best VPN for Security](/journal/best-vpn-security-2026).
+    `
+  },
+  {
+    id: 25,
+    slug: "what-is-password-manager",
+    title: "What Is a Password Manager and Why You Need One in 2026",
+    description: "The average person has 50-200 online accounts. A password manager stores them in an encrypted vault so you only remember one master password.",
+    category: "password-managers",
+    author: "thomas",
+    datePublished: "2026-04-15",
+    dateModified: "2026-04-15",
+    readTime: 8,
+    featured: false,
+    tags: ["password-manager", "basics", "security", "guide"],
+    affiliateSlugs: ["nordpass"],
+    content: `
+## The Problem No One Wants to Admit
+
+The average internet user in 2026 has between 50 and 200 accounts. Banking, email, social, streaming, shopping, utilities, work, gaming. Human memory does not scale to hundreds of unique complex passwords, so almost everyone reuses. Credential stuffing attacks exploit exactly this — attackers take passwords leaked in one breach and try them against every other service, because they know reuse is the default.
+
+Over 8 billion credentials were exposed in breaches in 2023 alone. If any of those were yours, and you reused that password anywhere else, attackers have already tried it.
+
+A password manager is the tool that makes unique complex passwords actually feasible.
+
+## What It Actually Does
+
+Three things:
+
+1. **Stores passwords in an encrypted vault** on your devices and optionally synced across them.
+2. **Generates unique complex passwords** on demand — 20+ characters, random, different for every account.
+3. **Autofills** those passwords when you visit the site, so you never have to type them.
+
+You remember one master password. The manager handles the rest.
+
+## The Security Model: Zero-Knowledge
+
+The critical property is **zero-knowledge encryption**. Your vault is encrypted on your device, with a key derived from your master password, *before* it ever reaches the provider's servers. The provider cannot read your vault even if they wanted to. Even if their servers are breached, what attackers steal is ciphertext — useless without your master password.
+
+This is not a marketing claim. It is an architectural property that can be verified by looking at the code and the network traffic. Reputable providers publish audits confirming it.
+
+## What to Look For
+
+- **Zero-knowledge architecture** — confirmed by audit, not just claimed.
+- **Independent security audit** — Cure53, PwC, or Trail of Bits are the names that matter.
+- **Strong 2FA** on your vault itself — ideally hardware key support.
+- **Cross-platform** — Windows, Mac, Linux, iOS, Android, browser extensions for all major browsers.
+- **Breach monitoring** — alerts you when a credential in your vault appears in a known breach.
+- **Emergency access** — a way for a trusted contact to recover the vault after a waiting period.
+
+## Our Recommendations
+
+- [NordPass](/go/nordpass) — best for most people, polished, cheap, audited.
+- 1Password — most features, best for power users.
+- Bitwarden — free and open source, best if cost is primary concern.
+
+Full comparison: [1Password vs Bitwarden](/journal/1password-vs-bitwarden).
+
+## Getting Started in 30 Minutes
+
+1. Install the app and browser extension on your primary device.
+2. Create a strong master password — read [our guide](/journal/how-to-create-master-password) before choosing one.
+3. Import passwords from your browser's saved passwords (every manager supports this).
+4. Enable 2FA on the manager itself.
+5. Over the next few weeks, as you log in to services, let the manager generate and save a new unique password for each one.
+
+That last step is the only real effort, and it is spread across weeks, not a single afternoon. Within two months you will have replaced every reused password with a unique generated one and closed the largest category of attack against your accounts.
+
+Further reading: [2FA Explained](/journal/two-factor-authentication-guide), [Complete Security Stack](/journal/setup-security-stack).
+    `
+  },
+  {
+    id: 26,
+    slug: "best-antivirus-2026",
+    title: "Best Antivirus Software in 2026 — What Actually Protects You",
+    description: "Bitdefender, Norton, Malwarebytes, Kaspersky. Detection rates from AV-TEST, what paid adds over Windows Defender, and what antivirus does not protect against.",
+    category: "antivirus",
+    author: "oyvind",
+    datePublished: "2026-04-15",
+    dateModified: "2026-04-15",
+    readTime: 10,
+    featured: false,
+    tags: ["antivirus", "bitdefender", "norton", "malwarebytes"],
+    affiliateSlugs: ["bitdefender", "norton", "malwarebytes"],
+    content: `
+## What Modern Antivirus Actually Is
+
+Antivirus in 2026 is not what it was in 2005. Signature matching — comparing files against a database of known-bad hashes — is only one layer of a modern endpoint product. The full stack includes:
+
+- **Signature detection** for known malware.
+- **Behavioural detection** that flags processes doing malware-like things even if the file is novel.
+- **URL blocking** that stops phishing and drive-by sites before they load.
+- **Network monitoring** that catches suspicious outbound connections.
+- **Identity monitoring** that alerts when your data appears on breach sites or dark web marketplaces.
+
+The best products do all five well. The worst products do one well and charge you for five.
+
+## Detection Rates — The Numbers That Matter
+
+AV-TEST and AV-Comparatives are the two independent labs whose numbers are worth reading. Both test quarterly with real malware samples collected in the wild.
+
+**Bitdefender** posts 99-100% detection consistently, quarter after quarter, with low false positives and a lightweight footprint. Their detection engine is also licensed to several white-label products, which is itself a vote of confidence.
+
+**Norton 360** is close behind on detection with a heavier feature set — VPN, dark web monitoring, cloud backup, parental controls. Heavier on system resources.
+
+**Kaspersky** has historically posted top-tier detection rates. In 2022 the US, UK, and EU issued advisories recommending against Kaspersky in government and critical-infrastructure environments due to the vendor's Russian jurisdiction. For individuals outside those environments the detection remains excellent; the recommendation is yours to make.
+
+**Malwarebytes** is excellent at potentially unwanted programs (PUPs) and adware — the nagware that sneaks in with free downloads. It is frequently deployed alongside a primary antivirus as a secondary scanner.
+
+## Free vs Paid
+
+Windows Defender — now Microsoft Defender — is a competent baseline. For a user who practises good hygiene, it covers the essentials. What paid adds:
+
+- Real-time web protection that extends beyond Edge.
+- Email scanning integrated with your mail client.
+- VPN for public Wi-Fi.
+- Identity monitoring across the dark web.
+- Cloud backup that survives ransomware.
+
+If you value your time more than $50 a year, the bundles pay for themselves the first time they save you from a single incident.
+
+## Our Picks
+
+- **Best detection**: [Bitdefender](/go/bitdefender). Quiet, accurate, inexpensive.
+- **Best all-in-one**: [Norton 360](/go/norton). VPN, backup, identity, antivirus under one subscription.
+- **Best for cleanup**: [Malwarebytes](/go/malwarebytes). If you suspect an existing infection, this is what you run.
+
+## What Antivirus Does Not Protect Against
+
+Antivirus is a layer, not a solution. It will not protect you against:
+
+- **Phishing** when you type credentials into a fake site — mitigated by a [password manager](/journal/what-is-password-manager) that only autofills the real site.
+- **Password reuse** when a service you use is breached — mitigated by unique generated passwords.
+- **Traffic interception** on public Wi-Fi — mitigated by a [VPN](/journal/best-vpn-security-2026).
+- **Account takeover** without malware, using stolen credentials — mitigated by [2FA](/journal/two-factor-authentication-guide).
+
+A complete security stack is antivirus + VPN + password manager + 2FA. Drop any one and you leave a gap the others cannot cover.
+    `
+  },
+  {
+    id: 27,
+    slug: "two-factor-authentication-guide",
+    title: "Two-Factor Authentication Explained — The One Security Step Most People Skip",
+    description: "2FA types ranked: SMS, authenticator apps, hardware keys, passkeys. Where to turn it on first, and how to set up Authy in ten minutes.",
+    category: "two-factor-authentication",
+    author: "thomas",
+    datePublished: "2026-04-15",
+    dateModified: "2026-04-15",
+    readTime: 9,
+    featured: false,
+    tags: ["2fa", "authy", "yubikey", "passkeys", "security"],
+    affiliateSlugs: ["nordpass", "nordvpn"],
+    content: `
+## What 2FA Actually Is
+
+Authentication has three possible factors:
+
+- **Something you know** — a password.
+- **Something you have** — a phone, a hardware key.
+- **Something you are** — a fingerprint, a face.
+
+Single-factor authentication is just a password. Two-factor combines a password with one of the other two. The practical effect: a stolen password alone is useless. The attacker needs your phone or your face as well.
+
+This is the single highest-leverage security control available. A strong password manager + 2FA on your important accounts blocks the vast majority of real-world attacks on individuals. Everything else is refinement around those two.
+
+## The Types, Ranked
+
+### SMS Codes — The Weakest Useful Form
+
+A code is texted to your phone. You type it in. This is the most common 2FA and the weakest. Two problems:
+
+- **SS7 vulnerabilities** let attackers intercept SMS without touching your device.
+- **SIM swapping** — an attacker convinces your carrier to port your number to a SIM they control. Once they have your number, they receive your codes.
+
+SMS 2FA is still better than no 2FA. It is not adequate for anything you cannot afford to lose.
+
+### Authenticator Apps — The Right Default
+
+Apps like Authy, Google Authenticator, and Microsoft Authenticator generate time-based one-time passwords (TOTP) *on your device*. The codes are never transmitted. An attacker who intercepts your network traffic gets nothing useful. An attacker who SIM-swaps you gets nothing useful.
+
+This is the right baseline for nearly every account.
+
+### Hardware Keys — The Strongest
+
+YubiKey and Google Titan are physical devices that plug into USB or tap via NFC. They implement FIDO2 — cryptographic authentication where the key verifies the website's identity before responding. This makes hardware keys **phishing-resistant by design**. Even if you type your password into a convincing fake site, the hardware key refuses to authenticate because the domain does not match.
+
+Appropriate for high-value targets: journalists, executives, anyone with account access worth serious attack effort. Get two — a primary and a backup. Lose your only key without a backup and account recovery is painful.
+
+### Passkeys — The Future
+
+Passkeys are the emerging standard. A cryptographic key pair stored on your device, unlocked with biometrics. Phishing-resistant by design. No shared secret, no typing anything, no code to steal. Apple, Google, and Microsoft all support them natively, and adoption by services is accelerating through 2026. Use them wherever offered.
+
+## Where to Turn It On First
+
+In this order:
+
+1. **Email.** Your email is the master key — every password reset flows through it. This is the single most important account to protect.
+2. **Financial accounts.** Banks, brokerages, payment services.
+3. **Password manager.** Protects everything downstream.
+4. **Work accounts.** Especially if you have admin privileges on anything.
+5. **Social media.** Because recovery through a hijacked social account is an established attack path.
+
+## Setting Up Authy in Ten Minutes
+
+We recommend Authy over Google Authenticator for one reason: Authy backs up your TOTP seeds to the cloud, encrypted with a password you set. Lose your phone and your 2FA survives. Google Authenticator can be migrated manually but historically has lost users their codes after device changes.
+
+1. Install Authy on your phone.
+2. Create an account with a strong Authy password.
+3. Go to the security settings on the account you are securing.
+4. Choose "authenticator app" as the 2FA method.
+5. Scan the QR code with Authy.
+6. Enter the first generated code to confirm.
+7. **Store the backup codes** the service provides in [your password manager](/go/nordpass) as a secure note. These are your escape hatch if you lose your phone before setting up a second device.
+
+Repeat for every important account. Takes about three minutes per account after the first.
+
+Related reading: [Complete Security Stack](/journal/setup-security-stack), [How to Create a Master Password](/journal/how-to-create-master-password).
+    `
+  },
+  {
+    id: 28,
+    slug: "dark-web-monitoring-explained",
+    title: "Dark Web Monitoring — What It Is and Whether You Need It",
+    description: "What the dark web is, what monitoring services actually do, and whether paid monitoring is worth it over free tools like Have I Been Pwned.",
+    category: "dark-web-monitoring",
+    author: "oyvind",
+    datePublished: "2026-04-15",
+    dateModified: "2026-04-15",
+    readTime: 8,
+    featured: false,
+    tags: ["dark-web", "monitoring", "breach", "haveibeenpwned"],
+    affiliateSlugs: ["nordpass", "nordvpn"],
+    content: `
+## What the Dark Web Actually Is
+
+The dark web is the part of the internet not indexed by standard search engines and only reachable through specialised software — usually Tor. It is not inherently criminal. Journalists use it to protect sources. Activists in authoritarian states use it to communicate. Researchers use it to study how the rest of the internet fails.
+
+It also hosts criminal marketplaces. Stolen credit cards, breached credential dumps, malware-as-a-service, forged documents — these trade on forums and markets most users never see and should not try to visit.
+
+## What Monitoring Services Do
+
+A dark web monitoring service continuously scans known marketplaces, forums, paste sites, and breach corpora for your personal information. When your email address, password hash, SSN, or credit card number appears, you get an alert.
+
+The service **does not remove your data**. Nothing can. Once data is leaked, it proliferates across mirrors, archives, and aggregator sites beyond any single operator's control. Monitoring gives you one thing: **time**. Time to change the exposed password before it is used. Time to freeze the credit report before new accounts are opened. Time to rotate the card before the fraud clears.
+
+## What Gets Monitored
+
+- **Email addresses** — baseline coverage, often free via Have I Been Pwned.
+- **Passwords** — specific hash matches against your current credentials.
+- **Credit card numbers** — detection of card dumps with your number.
+- **SSN / NI number** — detection on identity-theft marketplaces.
+- **Phone numbers** — increasingly traded alongside credentials.
+- **Medical records** — a growing category as healthcare breaches pile up; medical records sell for more than credit cards because they enable richer fraud.
+
+## Do You Need to Pay for It?
+
+**Have I Been Pwned** (haveibeenpwned.com) is free, actively maintained by Troy Hunt, and covers breach monitoring for email addresses. You can subscribe for alerts. For most individuals this is sufficient.
+
+A modern [password manager](/go/nordpass) adds automatic detection when any password in your vault appears in a known breach, and prompts you to change it. Combined with free HIBP alerts on your emails, you have the baseline covered at no cost.
+
+Paid services add:
+
+- **Real-time alerts** rather than waiting for the next HIBP sync.
+- **Broader data types** — SSN, cards, medical, phone.
+- **Active remediation** — templated letters, dispute assistance, account recovery support.
+- **Insurance** — many plans include identity theft insurance up to $1M.
+
+## Our Take
+
+For most individuals: free HIBP + a password manager with breach monitoring + reasonable credit monitoring from your bank is enough. Paid is justified when:
+
+- You have a **high-risk profile** — public figure, executive, journalist, abuse survivor.
+- You have been **previously breached** and want active remediation support.
+- You want **insurance** against identity theft remediation costs.
+
+For everyone else, spend the money on a [VPN](/go/nordvpn) and a [password manager](/go/nordpass) first. Those prevent breaches on your end. Dark web monitoring only tells you about breaches on someone else's end.
+
+Further reading: [Identity Protection Guide](/journal/identity-protection-guide-2026), [How to Check If You've Been Hacked](/journal/how-to-check-if-hacked).
+    `
+  },
+  {
+    id: 29,
+    slug: "identity-protection-guide-2026",
+    title: "Identity Protection in 2026 — How to Protect Yourself Before It's Too Late",
+    description: "15 million US identity theft victims a year. How it happens, five protective layers, and what to do if you become one of them.",
+    category: "identity-protection",
+    author: "thomas",
+    datePublished: "2026-04-15",
+    dateModified: "2026-04-15",
+    readTime: 11,
+    featured: false,
+    tags: ["identity-theft", "protection", "credit", "monitoring"],
+    affiliateSlugs: ["nordpass", "nordvpn", "bitdefender"],
+    content: `
+## The Numbers
+
+Roughly **15 million identity theft victims a year in the United States**. In the UK, identity fraud accounts for over half of all fraud cases recorded by Cifas. Average individual loss north of $1,000; average hours spent recovering, over 100. Two trends push those numbers up: breaches keep getting larger, and AI-generated phishing now defeats the "bad grammar" heuristic most people relied on.
+
+## How It Actually Happens
+
+**Data breaches.** You cannot prevent a service you use from being breached. You can limit the damage by never reusing passwords and monitoring for exposure.
+
+**Phishing.** AI-generated phishing in 2026 is fluent, contextual, and often includes information scraped from public profiles. The fake bank email now knows your branch, your advisor's name, and a plausible pretext.
+
+**Social engineering.** Attackers call customer service, claim to be you, and work the call centre until they get enough access to hijack an account. Strong secondary authentication on the customer service side is the only real defence, and you have no control over it.
+
+**Physical theft.** Wallet, mail, dumpster contents with account statements. Less glamorous, still effective.
+
+**Account takeover via credential stuffing.** Stolen passwords from one breach tested against every other service. Scales to millions of accounts per attacker, per hour.
+
+## Five Protective Layers
+
+### Layer 1: Unique Complex Passwords
+
+Via a [password manager](/go/nordpass). This single control blocks credential stuffing entirely. Every account gets a unique generated password. A breach at one service exposes exactly one account.
+
+### Layer 2: Two-Factor Authentication
+
+On every important account. A stolen password without the second factor is useless. See our [2FA guide](/journal/two-factor-authentication-guide) for which accounts matter most and how to set up Authy.
+
+### Layer 3: Credit Monitoring and Fraud Alerts
+
+In the US: free credit reports from all three bureaus annually, plus fraud alert / credit freeze. In the UK: Experian, Equifax, and TransUnion all offer monitoring; Cifas offers protective registration.
+
+A **credit freeze** prevents new accounts from being opened in your name without your explicit unfreeze. It is the single most effective identity-theft control. It is free. Turn it on and unfreeze temporarily the handful of times per decade you actually open new credit.
+
+### Layer 4: Dark Web Monitoring
+
+Basic coverage via Have I Been Pwned is free. A [password manager](/go/nordpass) with breach monitoring catches the high-value case of your own credentials appearing in a dump. See [our dark web monitoring article](/journal/dark-web-monitoring-explained) for when paid services are worth it.
+
+### Layer 5: Traffic and Device Hygiene
+
+[VPN](/go/nordvpn) on public networks so session tokens and login credentials cannot be intercepted. [Antivirus](/go/bitdefender) to catch the malware categories that harvest credentials. Scepticism toward unsolicited contact — verify by calling back on official numbers.
+
+## When It Happens Anyway
+
+Despite every layer, you can still be caught in a breach at a service you use, or targeted by a sophisticated attacker. The response playbook:
+
+1. **Contact the affected institution immediately.** Banks, card issuers, the identity provider of the hijacked account.
+2. **Place a fraud alert with all three credit agencies.** Free, nationwide, triggered by one phone call.
+3. **Report to the authorities.** Action Fraud in the UK. FTC (identitytheft.gov) in the US. The report number is often required by creditors for dispute resolution.
+4. **Keep detailed records.** Every call, every date, every case number. Identity theft recovery involves dozens of interactions and the paper trail is the only way to stay straight.
+5. **Consider a full credit freeze** if financial accounts were affected.
+6. **Change passwords and 2FA on every related account**, starting with email.
+
+Related reading: [Complete Cybersecurity Checklist](/journal/cybersecurity-checklist-2026), [How to Check If You've Been Hacked](/journal/how-to-check-if-hacked).
+    `
+  },
+  {
+    id: 30,
+    slug: "vpn-vs-antivirus-vs-password-manager",
+    title: "VPN vs Antivirus vs Password Manager — Do You Need All Three?",
+    description: "Each tool protects against a different threat. We break down what each covers, what it leaves exposed, and the priority order if budget forces a choice.",
+    category: "vpn",
+    author: "oyvind",
+    datePublished: "2026-04-15",
+    dateModified: "2026-04-15",
+    readTime: 8,
+    featured: false,
+    tags: ["vpn", "antivirus", "password-manager", "security-stack"],
+    affiliateSlugs: ["nordvpn", "nordpass", "bitdefender"],
+    content: `
+## The Question We Get Most
+
+"Do I really need all three?" Yes. They protect against different things, and each leaves gaps the others close. Here is what each actually covers.
+
+## What Each Tool Protects Against
+
+### VPN
+
+Encrypts your traffic and hides your IP from ISPs, network operators, and anyone observing the wire. Most useful on public networks (coffee shops, hotels, airports) where traffic is trivially interceptable.
+
+**Does not protect against:** malware on your device, weak or reused passwords, phishing, compromised services you log into.
+
+### Antivirus
+
+Detects and blocks malware. Monitors running processes for suspicious behaviour. Blocks malicious URLs. Stops ransomware, trojans, and browser-based exploits.
+
+**Does not protect against:** traffic interception, credential reuse, phishing that does not involve malware, account takeover using stolen passwords.
+
+### Password Manager
+
+Generates and stores unique complex passwords. Alerts on breaches. Autofill protects against phishing because the manager only fills on the real domain — not a typo-squatting fake.
+
+**Does not protect against:** malware that logs keystrokes after you unlock the vault, traffic interception, zero-day browser exploits.
+
+## The Gaps Each Alone Leaves
+
+**VPN alone:** You are still exposed to malware and credential stuffing. A keylogger on your machine captures every password you type regardless of how well your traffic is encrypted.
+
+**Antivirus alone:** Your traffic on public Wi-Fi is still interceptable. Your reused passwords are still compromised the next time a service you use is breached.
+
+**Password manager alone:** Your traffic is still exposed. Malware on your machine can still wait for you to unlock the vault and then exfiltrate credentials.
+
+Each tool is necessary. None is sufficient.
+
+## Priority Order If Budget Forces a Choice
+
+1. **Password manager.** Free tiers exist ([Bitwarden](/go/bitwarden), NordPass Free). Blocks credential stuffing, which is the single most common attack against individuals. No excuse to skip.
+2. **2FA.** Free. The second-highest-leverage control after unique passwords. [Authy](/go/authy) or any authenticator app.
+3. **VPN.** Critical if you use public Wi-Fi regularly. [NordVPN](/go/nordvpn) at $3/month is cheap insurance against an entire category of attack.
+4. **Antivirus.** Windows Defender is competent. Paid [Bitdefender](/go/bitdefender) adds real-time web protection, email scanning, and identity monitoring.
+
+## The Cost Reality
+
+NordVPN 2-year + NordPass Premium, at the time of writing, comes to **under $6 a month combined**. Add a paid antivirus and you are at $10-12 a month for a comprehensive stack. That is less than a single streaming subscription, and it covers the three most common attack vectors against individuals: traffic interception, credential reuse, and malware.
+
+The math is not close. If you can afford one streaming service, you can afford a complete security stack.
+
+Related reading: [Complete Security Stack Setup](/journal/setup-security-stack), [Cybersecurity Checklist 2026](/journal/cybersecurity-checklist-2026).
+    `
+  },
+  {
+    id: 31,
+    slug: "secure-home-network-guide",
+    title: "How to Secure Your Home Network in 2026 — A Practical Guide",
+    description: "Router settings that matter, network segmentation for IoT, DNS you should actually use, and when to run a VPN at the router.",
+    category: "vpn",
+    author: "thomas",
+    datePublished: "2026-04-15",
+    dateModified: "2026-04-15",
+    readTime: 10,
+    featured: false,
+    tags: ["home-network", "router", "iot", "dns", "wifi"],
+    affiliateSlugs: ["nordvpn", "surfshark"],
+    content: `
+## Start With the Router
+
+Your router is the gateway every device on your network traverses. Compromise here affects everything. Five settings matter.
+
+### 1. Change the Admin Password
+
+Default admin credentials for every consumer router are publicly indexed. "admin/admin" and "admin/password" are listed in databases attackers reference as a first step. Change it to something unique and store it in your [password manager](/go/nordpass).
+
+### 2. Update the Firmware
+
+Router firmware gets security patches. Most routers do not update automatically. Check quarterly. If your router has not received updates in two years, it is end-of-life — replace it.
+
+### 3. Change the WiFi SSID
+
+The default SSID usually reveals the router model (TP-Link_XXXX, Netgear_XXXX). That tells an attacker which vulnerabilities to try. Rename it to something generic that does not identify hardware, location, or owner.
+
+### 4. Use WPA3 or WPA2-AES
+
+- **WPA3** — use if all your devices support it. Strongest current standard.
+- **WPA2-AES** — acceptable baseline.
+- **WEP or original WPA** — break every connection you have and fix this today. WEP can be cracked in under a minute. Its presence on a modern network is an open door.
+- **Mixed mode (WPA2/WPA3)** — acceptable during a transition.
+
+### 5. Strong WiFi Password
+
+Minimum 12 characters. Mixed case, numbers, symbols. Generate it in your password manager and let guests scan the QR code rather than typing it.
+
+## Network Segmentation
+
+A single flat network means a compromised smart doorbell can reach your laptop. Segmentation limits that blast radius.
+
+### Guest Network
+
+Most modern routers support a guest SSID. Put visitors on it. Put IoT devices on it. Your main network stays reserved for trusted devices you actually control.
+
+### IoT Isolation
+
+Smart cameras, thermostats, light bulbs, TVs. These devices have historically terrible security. Firmware rarely updated. Default credentials common. Put them on the guest network so a compromise of your smart lightbulb cannot pivot to your work laptop.
+
+## DNS That Actually Protects You
+
+Change your router's DNS from your ISP's default. Two good choices:
+
+- **Cloudflare 1.1.1.1 / 1.0.0.1** — fast, privacy-respecting, no logging beyond 24h for abuse prevention.
+- **Quad9 9.9.9.9** — automatically blocks domains associated with malware, phishing, and known bad actors. Slower than Cloudflare by a hair, worth it for the filtering.
+
+Setting DNS at the router level means every device on your network gets the protection without individual configuration. Especially valuable for IoT devices where you cannot change settings per-device.
+
+## VPN at the Router Level
+
+Running a VPN on the router encrypts every device's traffic — including smart TVs, game consoles, and IoT devices that cannot run VPN clients themselves.
+
+[NordVPN](/go/nordvpn) and [Surfshark](/go/surfshark) both support router configuration on compatible hardware. The easiest path: a GL.iNet travel router ($30-50) connected to your main router, running the VPN, with devices connected through it. No firmware flashing required.
+
+Use cases where router-level VPN is worth the hassle:
+
+- **Smart TVs and consoles** you want tunnelled.
+- **Households in surveillance-heavy regions** where blanket protection is the goal.
+- **Work-from-home setups** where a single VPN covers the home office.
+
+For most users, per-device VPN apps are fine. But if you have a lot of devices that cannot run their own VPN, router-level is the cleanest answer.
+
+Further reading: [Best VPN for Security](/journal/best-vpn-security-2026), [Complete Cybersecurity Checklist](/journal/cybersecurity-checklist-2026).
+    `
+  },
+  {
+    id: 32,
+    slug: "cybersecurity-checklist-2026",
+    title: "The Complete Cybersecurity Checklist for 2026 — 20 Steps to Secure Your Digital Life",
+    description: "Tiered checklist: what to do today, this week, this month, and as ongoing habit. Twenty concrete steps from zero to solid.",
+    category: "vpn",
+    author: "oyvind",
+    datePublished: "2026-04-15",
+    dateModified: "2026-04-15",
+    readTime: 11,
+    featured: true,
+    tags: ["checklist", "security", "guide", "complete-stack"],
+    affiliateSlugs: ["nordvpn", "nordpass", "bitdefender"],
+    content: `
+## How to Use This
+
+Four tiers, ordered by leverage. Start at Tier 1 today. Do not move to Tier 2 until every Tier 1 item is done. The order is deliberate — each tier closes a higher-leverage gap than the next.
+
+## Tier 1 — Today (One Hour)
+
+High-impact, low-effort items you can complete in a single evening.
+
+**1. Enable 2FA on your email.** Email is the master key — every password reset flows through it. This single step prevents most account takeovers.
+
+**2. Enable 2FA on your password manager.** If you do not have one yet, skip to Tier 2 step 6 and come back.
+
+**3. Enable 2FA on your bank.** Use an authenticator app rather than SMS if offered.
+
+**4. Check [haveibeenpwned.com](https://haveibeenpwned.com) for every email address you use.** Note which services have breached. You will change those passwords in Tier 2.
+
+**5. Update your router firmware.** Log into your router's admin interface and apply any available updates.
+
+## Tier 2 — This Week
+
+**6. Install a password manager.** [NordPass](/go/nordpass), 1Password, or Bitwarden. Import your browser passwords and set a strong master password.
+
+**7. Change passwords on important accounts.** Email, banking, primary social media, anything breached per step 4. Use the manager to generate unique 20+ character passwords.
+
+**8. Change your router admin password** from the default.
+
+**9. Enable WPA3 or WPA2-AES** on your WiFi. Never WEP, never original WPA.
+
+**10. Set up a guest network** for IoT devices. Full guide: [Secure Your Home Network](/journal/secure-home-network-guide).
+
+## Tier 3 — This Month
+
+**11. Install a VPN.** [NordVPN](/go/nordvpn) or [Surfshark](/go/surfshark). Configure it on every device you own and set it to connect on untrusted networks automatically.
+
+**12. Enable 2FA on every social media account.** Instagram, X, Facebook, LinkedIn, TikTok, Reddit.
+
+**13. Review app permissions on your phone.** Settings → Privacy. Revoke location, microphone, and camera from apps that do not need them. Most do not.
+
+**14. Enable full-disk encryption.** BitLocker on Windows, FileVault on Mac. Turn it on today — it is free and prevents a stolen laptop from exposing every file on it.
+
+**15. Enable auto-updates on all your software.** OS, browser, password manager, antivirus.
+
+## Tier 4 — Ongoing Habits
+
+**16. Think before clicking links.** Hover to see the real destination. If an email from your bank links to "b4nk-login.example.com", that is not your bank.
+
+**17. Verify unexpected contact** by calling back on the official number from the company's website — never the number in the message.
+
+**18. Check your credit report quarterly.** Annualcreditreport.com (US), or your national equivalent. Look for accounts you did not open.
+
+**19. Keep 2FA backup codes stored securely.** As secure notes in your password manager or physically in a safe.
+
+**20. Review connected apps annually.** Google, Apple, Facebook all expose a list of third-party apps with access to your account. Revoke anything you do not actively use.
+
+## The Budget Reality
+
+The paid items above — password manager, VPN, antivirus — come to under $12 a month in total on annual plans. That is the ongoing cost of a comprehensive security posture. The Tier 1 items cost nothing.
+
+If you complete this checklist you will have closed the top fifteen attack surfaces most individuals face. Everything beyond that is refinement.
+
+Related reading: [Complete Security Stack](/journal/setup-security-stack), [Identity Protection Guide](/journal/identity-protection-guide-2026).
+    `
+  },
+  {
+    id: 33,
+    slug: "setup-security-stack",
+    title: "How to Set Up a Complete Security Stack in One Afternoon",
+    description: "NordVPN + NordPass + 2FA step by step. Three hours of work, three attack vectors closed — traffic, credentials, and account takeover.",
+    category: "vpn",
+    author: "thomas",
+    datePublished: "2026-04-15",
+    dateModified: "2026-04-15",
+    readTime: 10,
+    featured: false,
+    tags: ["tutorial", "security-stack", "nordvpn", "nordpass", "2fa"],
+    affiliateSlugs: ["nordvpn", "nordpass"],
+    content: `
+## What You Are Setting Up
+
+In one afternoon you will install, configure, and verify:
+
+- A VPN ([NordVPN](/go/nordvpn))
+- A password manager ([NordPass](/go/nordpass))
+- Two-factor authentication on every important account
+
+Those three close the three attack vectors that account for the majority of real-world attacks against individuals. Start to finish, three hours.
+
+## Part 1 — NordPass First
+
+The password manager is first because you will use it to store credentials for everything else you install today.
+
+### Create the Account
+
+Go to [NordPass](/go/nordpass) and sign up. **Choose a 16+ character master password.** Write it on paper and store the paper somewhere physically secure — a home safe, a locked drawer. You will memorise it over the next week. If you forget the master password, there is no recovery — that is the point of zero-knowledge encryption. The paper is your one-time safety net.
+
+### Install the App and Browser Extension
+
+Desktop app for your main computer. Browser extension for whichever browser you use. Mobile app for your phone. Sign in on each with the master password.
+
+### Enable 2FA on NordPass Itself
+
+Install [Authy](/go/authy) on your phone — we recommend it over Google Authenticator because it backs up your TOTP seeds encrypted. Go to NordPass → Settings → 2FA → Authenticator app → scan QR with Authy. Store the backup codes NordPass shows you as a secure note inside NordPass itself.
+
+### Import Existing Passwords
+
+NordPass can import from Chrome, Firefox, Edge, Safari, and most other managers. Settings → Import → choose source → let it pull in every password your browser has saved. You now have a baseline.
+
+## Part 2 — NordVPN
+
+### Sign Up
+
+Go to [NordVPN](/go/nordvpn). Create an account. Let NordPass generate and save the password for this account.
+
+### Install and Configure
+
+Install the app on every device you own. Before connecting, set these:
+
+- **Protocol: NordLynx.** Fastest, based on WireGuard.
+- **Kill switch: system-level**, not app-level. Blocks all traffic if the tunnel drops.
+- **DNS leak protection: on.**
+- **Threat Protection: on.** DNS-level malware and tracker blocking.
+- **Auto-connect: on untrusted networks.** Automatic protection on public WiFi.
+
+### Verify
+
+Connect to a server. Go to [ipleak.net](https://ipleak.net). Confirm the IP shown is the VPN server's, not yours. Confirm the DNS servers shown are NordVPN's. If anything shows your real IP, the leak protection is not working — troubleshoot before continuing.
+
+### Mobile
+
+On iOS and Android, enable **Always-On VPN** in the NordVPN app. This ensures the tunnel reconnects automatically on network changes.
+
+## Part 3 — 2FA on Important Accounts
+
+In order:
+
+1. **Primary email.** Gmail, Outlook, Proton, whatever you use. Security settings → 2FA → authenticator app → scan with Authy.
+2. **Banking.** Every bank and card account.
+3. **Social media.** Instagram, X, Facebook, LinkedIn.
+4. **Any account flagged** by NordPass's breach monitoring as compromised.
+
+For each account, **store the backup codes in NordPass** as a secure note attached to the account. This is your escape hatch if you lose your phone.
+
+## What You Have at the End
+
+- **Traffic encrypted** by NordVPN on every network you touch.
+- **Every password unique and complex**, generated and stored by NordPass.
+- **2FA blocking account takeover** on every account that matters.
+
+The three most common attack vectors against individuals — traffic interception, credential reuse, and account takeover with stolen passwords — are all now addressed. In one afternoon.
+
+Further reading: [Cybersecurity Checklist 2026](/journal/cybersecurity-checklist-2026), [How to Create a Master Password](/journal/how-to-create-master-password).
+    `
+  },
+  {
+    id: 34,
+    slug: "how-to-check-if-hacked",
+    title: "How to Check If You've Been Hacked — A Step-by-Step Investigation",
+    description: "Six-step investigation: breach exposure, active sessions, forwarding rules, connected apps, financial accounts, and hardening after.",
+    category: "identity-protection",
+    author: "oyvind",
+    datePublished: "2026-04-15",
+    dateModified: "2026-04-15",
+    readTime: 10,
+    featured: false,
+    tags: ["tutorial", "incident-response", "hacked", "investigation"],
+    affiliateSlugs: ["nordpass", "nordvpn"],
+    content: `
+## When This Guide Applies
+
+You suspect you have been hacked, you want to know for sure, or you want to do a periodic audit. This is the checklist.
+
+Work through it in order. Each step catches a different category of compromise.
+
+## Step 1 — Check Breach Exposure
+
+Go to [haveibeenpwned.com](https://haveibeenpwned.com). Enter every email address you use — personal, work, old ones you still check. Note which services appear in breach results.
+
+For each breached service:
+
+- Change the password immediately to something generated by your [password manager](/go/nordpass).
+- If you reused that password anywhere else, change it everywhere. (This is why reuse is the cardinal sin.)
+- Subscribe to breach notifications via HIBP — free, alerts you automatically on future exposure.
+
+## Step 2 — Active Sessions
+
+Every major service lets you see every device currently logged in to your account. Review each.
+
+- **Google** — [myaccount.google.com/security/devices](https://myaccount.google.com/security/devices)
+- **Apple** — [appleid.apple.com](https://appleid.apple.com) → Devices
+- **Facebook** — Settings → Security → Where You're Logged In
+- **Microsoft** — [account.microsoft.com/security/sign-in-activity](https://account.microsoft.com/security/sign-in-activity)
+- **Instagram** — Settings → Security → Login Activity
+- **X** — Settings → Security → Apps and sessions
+
+If you see a device you do not recognise:
+
+1. **Sign it out** immediately.
+2. **Change the password** of that account.
+3. **Enable 2FA** if it is not already on.
+
+## Step 3 — Email Forwarding Rules
+
+A classic post-compromise technique: attacker sets a forwarding rule on your email so copies of everything arrive at their inbox, silently, even after you change your password. They can reset passwords on services you use without you seeing the reset emails.
+
+Check and delete any rule you did not create:
+
+- **Gmail** — Settings → See all settings → Filters and Blocked Addresses; also Forwarding and POP/IMAP
+- **Outlook** — Settings → Mail → Rules, and Forwarding
+- **Apple Mail** — iCloud.com → Mail → Rules
+
+Also check for recent changes to your recovery email and phone number. Attackers set these so they can lock you out after you regain access.
+
+## Step 4 — Connected Third-Party Apps
+
+Every OAuth login ("Sign in with Google", "Sign in with Apple") creates a persistent grant. Over years, these accumulate. Review and revoke:
+
+- **Google** — [myaccount.google.com/security/third-party](https://myaccount.google.com/security/third-party)
+- **Apple** — [appleid.apple.com](https://appleid.apple.com) → Sign in with Apple
+- **Facebook** — Settings → Apps and Websites
+- **Microsoft** — Account → Privacy → Apps and services
+
+Revoke anything you do not actively use. Revoke anything you do not recognise.
+
+## Step 5 — Financial Accounts
+
+Log into every bank, card, and payment account. Look for:
+
+- **Transactions you did not make.** Obvious.
+- **Small test charges** — $0.99 or $1.00 — before larger fraud. Attackers test a stolen card with a tiny charge to see if it fires; then the real fraud follows days later.
+- **Address changes**, new cards ordered, new account opens.
+
+Check your credit report for accounts you did not open. This catches the category where attackers use your identity to open new credit rather than hijack existing accounts.
+
+## Step 6 — Harden After
+
+Assuming you now understand the scope, close it down.
+
+- **2FA on everything** — using an authenticator app, not SMS.
+- **New unique passwords** on every affected account, generated by [NordPass](/go/nordpass).
+- **Revoke all active sessions** on every major account so any lingering attacker is evicted.
+- **Consider a credit freeze** if financial accounts were affected.
+- **Report the incident.** Action Fraud in the UK, FTC identitytheft.gov in the US. You will need the report number for dispute resolution with creditors.
+
+If malware is suspected on a device, reinstall the OS rather than relying on antivirus cleanup. It is faster and more reliable than chasing every trace.
+
+Related reading: [Identity Protection Guide](/journal/identity-protection-guide-2026), [2FA Guide](/journal/two-factor-authentication-guide).
+    `
+  },
+  {
+    id: 35,
+    slug: "how-to-create-master-password",
+    title: "How to Create and Remember a Truly Secure Master Password",
+    description: "Standard password advice is wrong. Length and randomness beat symbol substitution. The passphrase method, explained with diceware.",
+    category: "password-managers",
+    author: "thomas",
+    datePublished: "2026-04-15",
+    dateModified: "2026-04-15",
+    readTime: 8,
+    featured: false,
+    tags: ["tutorial", "master-password", "passphrase", "diceware"],
+    affiliateSlugs: ["nordpass"],
+    content: `
+## Why Standard Advice Is Wrong
+
+"Mix uppercase, lowercase, numbers, and symbols." Everyone has heard it. It produces predictable patterns. **P@ssw0rd1!** satisfies every complexity rule and is in every cracker's top-thousand list, because substituting @ for a and 0 for o are the first things every cracking tool tries.
+
+Real strength comes from **length** and **randomness**, not symbol substitution. A 30-character random passphrase is harder to crack than a 12-character string of symbols, by orders of magnitude, and it is vastly easier to remember.
+
+## The Passphrase Approach
+
+A passphrase is a sequence of random words. Five or six words, chosen randomly — which is the crucial detail. Meaningful words chosen by you are not random. Words that relate to your life, your interests, your family are exactly what targeted attackers will guess first.
+
+**Random** means: no pattern you chose, no theme, no meaning. The words should surprise you.
+
+## The Diceware Method
+
+This is the gold-standard technique. It has been used for thirty years because it works.
+
+1. Get the EFF diceware list (available free at [eff.org/dice](https://www.eff.org/dice)). It contains 7,776 words numbered by five-digit dice rolls.
+2. Roll five physical dice. Or open the list and use five random number generator rolls at random.org.
+3. Look up the word corresponding to that five-digit number.
+4. Repeat five or six times.
+5. String the words together with hyphens or spaces.
+
+The result is a 30+ character passphrase that is genuinely random and, because it is made of real words, surprisingly memorable.
+
+## Example
+
+Five random rolls produce: **lemon-carpet-river-noble-frost**
+
+- Thirty characters.
+- Five words from a 7,776-word list = ~64 bits of entropy, enough to resist any practical attack.
+- Easy to visualise — a frosty morning, a noble lemon sitting on a carpet by a river. The absurdity is the mnemonic.
+
+Compare to the "complex" password **P@ssw0rd1!** at 10 characters and maybe 25 bits of entropy against a smart cracker. The passphrase is orders of magnitude stronger and much easier to remember.
+
+## Making It Memorable
+
+- **Build a scene.** For lemon-carpet-river-noble-frost, picture a lemon sitting on a carpet by a frozen river, with a king nearby. The more vivid and absurd, the stickier the memory.
+- **Type it ten times** when you first create it. Muscle memory takes hold quickly.
+- **Type it again the next two days** before you go to sleep, and the memory cements.
+- **Write it down on paper** for the first month and keep the paper somewhere physically secure — a home safe, a locked drawer. Destroy the paper once you are confident in the memory.
+
+## What Not to Do
+
+- **Never store the master password digitally.** Not in a note, not in a file, not in email to yourself.
+- **Never use the same passphrase anywhere else.** It protects your entire vault — unique is non-negotiable.
+- **Never share it** with anyone, ever. If you need to pass access to a family member after your death, use your password manager's **emergency access** feature ([NordPass](/go/nordpass), 1Password, and Bitwarden all have it). Sharing the master password defeats the security model.
+- **Never type it on a device you do not fully control.** Not a work machine you do not own, not a shared family computer, not a kiosk.
+
+## The Result
+
+One 30-character passphrase, genuinely random, memorised properly. That is the key that protects every other password in your life. Get this one right and the rest of your security stack works.
+
+Related: [What Is a Password Manager](/journal/what-is-password-manager), [Complete Security Stack Setup](/journal/setup-security-stack).
+    `
   }
 ]
 

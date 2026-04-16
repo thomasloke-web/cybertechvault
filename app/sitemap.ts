@@ -33,6 +33,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }))
 
+  const staticJournalPages = [
+    { slug: "easeus-pctrans-review", date: "2026-04-10" },
+    { slug: "easeus-backup-review", date: "2026-04-12" },
+    { slug: "ransomware-protection-2026", date: "2026-04-08" },
+    { slug: "end-to-end-encryption-explained", date: "2026-04-05" },
+    { slug: "best-free-security-tools-2026", date: "2026-04-02" },
+  ].map((p) => ({
+    url: `${base}/journal/${p.slug}`,
+    lastModified: new Date(p.date),
+    changeFrequency: "monthly" as const,
+    priority: 0.8,
+  }))
+
   const reviewPages = reviews.map((r) => ({
     url: `${base}/reviews/${r.slug}`,
     lastModified: new Date(),
@@ -47,5 +60,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }))
 
-  return [...staticPages, ...articlePages, ...reviewPages, ...comparisonPages]
+  return [...staticPages, ...articlePages, ...staticJournalPages, ...reviewPages, ...comparisonPages]
 }

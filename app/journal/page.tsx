@@ -12,8 +12,55 @@ export const metadata: Metadata = {
   alternates: { canonical: `${siteUrl}/journal` },
 }
 
+const staticJournalEntries = [
+  {
+    slug: "easeus-backup-review",
+    title: "EaseUS Backup Center Review 2026 — Set It Once, Never Lose Data Again",
+    description: "Real-world test of EaseUS Backup Center: file, system and disk backups, automated schedules, cloud destinations, and how it neutralises ransomware.",
+    category: "backup",
+    author: "thomas" as const,
+    datePublished: "2026-04-12",
+  },
+  {
+    slug: "easeus-pctrans-review",
+    title: "EaseUS Todo PCTrans Review 2026 — The Easiest Way to Move to a New PC",
+    description: "Hands-on review of EaseUS Todo PCTrans: three migration types, what transfers, what does not, and why it outperforms manual file copying.",
+    category: "migration",
+    author: "thomas" as const,
+    datePublished: "2026-04-10",
+  },
+  {
+    slug: "ransomware-protection-2026",
+    title: "Ransomware in 2026 — What It Is, How It Spreads, and How to Protect Yourself",
+    description: "A plain-English guide to ransomware in 2026: how it works, how it gets in, the defence stack that stops it, and what to do if it hits you.",
+    category: "security",
+    author: "thomas" as const,
+    datePublished: "2026-04-08",
+  },
+  {
+    slug: "end-to-end-encryption-explained",
+    title: "What Is End-to-End Encryption and Why Does It Matter in 2026?",
+    description: "Plain-English explanation of end-to-end encryption: what it protects, what it does not, which services use it, and why metadata still matters.",
+    category: "privacy",
+    author: "oyvind" as const,
+    datePublished: "2026-04-05",
+  },
+  {
+    slug: "best-free-security-tools-2026",
+    title: "The Best Free Security Tools in 2026 — Protect Yourself Without Spending a Penny",
+    description: "A zero-cost security stack for 2026: free antivirus, password manager, VPN, breach notifier, authenticator and DNS filter.",
+    category: "security",
+    author: "thomas" as const,
+    datePublished: "2026-04-02",
+  },
+]
+
 export default function JournalPage() {
-  const sorted = [...articles].sort((a, b) => new Date(b.datePublished).getTime() - new Date(a.datePublished).getTime())
+  const combined = [
+    ...articles.map((a) => ({ slug: a.slug, title: a.title, description: a.description, category: a.category, author: a.author, datePublished: a.datePublished })),
+    ...staticJournalEntries,
+  ]
+  const sorted = combined.sort((a, b) => new Date(b.datePublished).getTime() - new Date(a.datePublished).getTime())
 
   return (
     <>

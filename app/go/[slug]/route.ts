@@ -17,7 +17,7 @@ export async function GET(req: NextRequest, { params }: { params: Promise<{ slug
   const link = AFFILIATE_MAP[slug]
   if (!link) return NextResponse.redirect(new URL("/journal", req.url))
 
-  const res = NextResponse.redirect(link.url, { status: 302 })
+  const res = NextResponse.redirect(link.url, { status: 301 })
   res.headers.set("Cache-Control", "no-store")
   return res
 }

@@ -2,6 +2,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
+import { EaseusProductCards } from "@/components/review/easeus-product-cards"
 
 const categories = [
   { name: "VPN", slug: "vpn", icon: "🛡️", description: "Browse privately. Bypass restrictions. Stay anonymous." },
@@ -115,6 +116,8 @@ export default function HomePage() {
             </div>
           </div>
         </section>
+
+        <EaseusProductCards />
 
         {/* Security Quiz CTA */}
         <section className="py-24 bg-[#0D1117] border-y border-[#00FF8820]">

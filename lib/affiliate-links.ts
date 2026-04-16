@@ -2,7 +2,14 @@ export const AFFILIATE_MAP: Record<string, { url: string; fallback?: string }> =
   // ═══════════════════════════════════════
   // VPN — 50 deep links
   // ═══════════════════════════════════════
-  "nordvpn": { url: "https://nordvpn.com/risk-free/?ref=norwegianspark", fallback: "https://nordvpn.com" },
+  "nordvpn": { url: "https://go.nordvpn.net/aff_c?aff_id=2495&offer_id=312", fallback: "https://nordvpn.com" },
+  "nordvpn-gaming": { url: "https://go.nordvpn.net/aff_c?aff_id=2495&offer_id=312", fallback: "https://nordvpn.com" },
+  "nordvpn-2year": { url: "https://go.nordvpn.net/aff_c?aff_id=2495&offer_id=312", fallback: "https://nordvpn.com" },
+  "nordvpn-business": { url: "https://go.nordvpn.net/aff_c?aff_id=2495&offer_id=312", fallback: "https://nordvpn.com" },
+  "surfshark-gaming": { url: "https://www.anrdoezrs.net/click-101728212-15438547", fallback: "https://surfshark.com" },
+  "norton": { url: "https://norton.com", fallback: "https://norton.com" },
+  "onepassword": { url: "https://1password.com", fallback: "https://1password.com" },
+  "yubikey": { url: "https://yubico.com", fallback: "https://yubico.com" },
   "nordvpn-2yr": { url: "https://nordvpn.com/offer/?ref=norwegianspark&plan=2yr", fallback: "https://nordvpn.com" },
   "nordvpn-1yr": { url: "https://nordvpn.com/offer/?ref=norwegianspark&plan=1yr", fallback: "https://nordvpn.com" },
   "nordvpn-monthly": { url: "https://nordvpn.com/pricing/?ref=norwegianspark&plan=monthly", fallback: "https://nordvpn.com" },
@@ -11,8 +18,9 @@ export const AFFILIATE_MAP: Record<string, { url: string; fallback?: string }> =
   "expressvpn-1yr": { url: "https://expressvpn.com/order/?ref=norwegianspark&plan=1yr", fallback: "https://expressvpn.com" },
   "expressvpn-6mo": { url: "https://expressvpn.com/order/?ref=norwegianspark&plan=6mo", fallback: "https://expressvpn.com" },
   "expressvpn-monthly": { url: "https://expressvpn.com/order/?ref=norwegianspark&plan=monthly", fallback: "https://expressvpn.com" },
-  "surfshark": { url: "https://surfshark.com/deal/?ref=norwegianspark", fallback: "https://surfshark.com" },
-  "surfshark-2yr": { url: "https://surfshark.com/deal/?ref=norwegianspark&plan=2yr", fallback: "https://surfshark.com" },
+  "surfshark": { url: "https://www.anrdoezrs.net/click-101728212-15438547", fallback: "https://surfshark.com" },
+  "surfshark-2year": { url: "https://www.anrdoezrs.net/click-101728212-15438547", fallback: "https://surfshark.com" },
+  "surfshark-2yr": { url: "https://www.anrdoezrs.net/click-101728212-15438547", fallback: "https://surfshark.com" },
   "surfshark-1yr": { url: "https://surfshark.com/deal/?ref=norwegianspark&plan=1yr", fallback: "https://surfshark.com" },
   "surfshark-starter": { url: "https://surfshark.com/deal/?ref=norwegianspark&plan=starter", fallback: "https://surfshark.com" },
   "protonvpn": { url: "https://protonvpn.com/pricing/?ref=norwegianspark", fallback: "https://protonvpn.com" },
@@ -77,10 +85,10 @@ export const AFFILIATE_MAP: Record<string, { url: string; fallback?: string }> =
   "keeper-personal": { url: "https://keepersecurity.com/pricing/?ref=norwegianspark&plan=personal", fallback: "https://keepersecurity.com" },
   "keeper-family": { url: "https://keepersecurity.com/pricing/?ref=norwegianspark&plan=family", fallback: "https://keepersecurity.com" },
   "keeper-business": { url: "https://keepersecurity.com/business/?ref=norwegianspark", fallback: "https://keepersecurity.com" },
-  "nordpass": { url: "https://nordpass.com/offer/?ref=norwegianspark", fallback: "https://nordpass.com" },
-  "nordpass-premium": { url: "https://nordpass.com/offer/?ref=norwegianspark&plan=premium", fallback: "https://nordpass.com" },
-  "nordpass-family": { url: "https://nordpass.com/offer/?ref=norwegianspark&plan=family", fallback: "https://nordpass.com" },
-  "nordpass-business": { url: "https://nordpass.com/business/?ref=norwegianspark", fallback: "https://nordpass.com" },
+  "nordpass": { url: "https://www.dpbolvw.net/click-101728212-15111884", fallback: "https://nordpass.com" },
+  "nordpass-premium": { url: "https://www.dpbolvw.net/click-101728212-15111884", fallback: "https://nordpass.com" },
+  "nordpass-family": { url: "https://www.dpbolvw.net/click-101728212-15111884", fallback: "https://nordpass.com" },
+  "nordpass-business": { url: "https://www.dpbolvw.net/click-101728212-15111884", fallback: "https://nordpass.com" },
   "roboform": { url: "https://roboform.com/pricing/?ref=norwegianspark", fallback: "https://roboform.com" },
   "roboform-everywhere": { url: "https://roboform.com/pricing/?ref=norwegianspark&plan=everywhere", fallback: "https://roboform.com" },
   "roboform-family": { url: "https://roboform.com/pricing/?ref=norwegianspark&plan=family", fallback: "https://roboform.com" },
@@ -114,12 +122,13 @@ export const AFFILIATE_MAP: Record<string, { url: string; fallback?: string }> =
   "norton-360-select": { url: "https://norton.com/products/norton-360-select/?ref=norwegianspark", fallback: "https://norton.com" },
   "norton-360-premium": { url: "https://norton.com/products/norton-360-premium/?ref=norwegianspark", fallback: "https://norton.com" },
   "norton-antivirus": { url: "https://norton.com/products/norton-antivirus-plus/?ref=norwegianspark", fallback: "https://norton.com" },
-  "bitdefender": { url: "https://bitdefender.com/solutions/?ref=norwegianspark", fallback: "https://bitdefender.com" },
+  "bitdefender": { url: "https://bitdefender.com", fallback: "https://bitdefender.com" },
+  "malwarebytes-simple": { url: "https://malwarebytes.com", fallback: "https://malwarebytes.com" },
   "bitdefender-total": { url: "https://bitdefender.com/solutions/total-security/?ref=norwegianspark", fallback: "https://bitdefender.com" },
   "bitdefender-premium": { url: "https://bitdefender.com/solutions/premium-security/?ref=norwegianspark", fallback: "https://bitdefender.com" },
   "bitdefender-internet": { url: "https://bitdefender.com/solutions/internet-security/?ref=norwegianspark", fallback: "https://bitdefender.com" },
   "bitdefender-antivirus": { url: "https://bitdefender.com/solutions/antivirus/?ref=norwegianspark", fallback: "https://bitdefender.com" },
-  "malwarebytes": { url: "https://malwarebytes.com/pricing/?ref=norwegianspark", fallback: "https://malwarebytes.com" },
+  "malwarebytes": { url: "https://malwarebytes.com", fallback: "https://malwarebytes.com" },
   "malwarebytes-premium": { url: "https://malwarebytes.com/pricing/?ref=norwegianspark&plan=premium", fallback: "https://malwarebytes.com" },
   "malwarebytes-teams": { url: "https://malwarebytes.com/business/?ref=norwegianspark", fallback: "https://malwarebytes.com" },
   "malwarebytes-privacy": { url: "https://malwarebytes.com/vpn/?ref=norwegianspark", fallback: "https://malwarebytes.com" },
@@ -255,7 +264,7 @@ export const AFFILIATE_MAP: Record<string, { url: string; fallback?: string }> =
   // ═══════════════════════════════════════
   // TWO-FACTOR AUTHENTICATION — 50 deep links
   // ═══════════════════════════════════════
-  "authy": { url: "https://authy.com/download/?ref=norwegianspark", fallback: "https://authy.com" },
+  "authy": { url: "https://authy.com", fallback: "https://authy.com" },
   "authy-premium": { url: "https://authy.com/pricing/?ref=norwegianspark", fallback: "https://authy.com" },
   "authy-desktop": { url: "https://authy.com/download/desktop/?ref=norwegianspark", fallback: "https://authy.com" },
   "duo-security": { url: "https://duo.com/pricing/?ref=norwegianspark", fallback: "https://duo.com" },
@@ -299,6 +308,12 @@ export const AFFILIATE_MAP: Record<string, { url: string; fallback?: string }> =
   "lastpass-authenticator-ios": { url: "https://apps.apple.com/app/lastpass-authenticator/id1079110004/?ref=norwegianspark", fallback: "https://lastpass.com" },
   "lastpass-authenticator-android": { url: "https://play.google.com/store/apps/details?id=com.lastpass.authenticator&ref=norwegianspark", fallback: "https://lastpass.com" },
   "duo-hardware-tokens": { url: "https://duo.com/product/trusted-users/two-factor-authentication/hardware-tokens/?ref=norwegianspark", fallback: "https://duo.com" },
+
+  // ═══════════════════════════════════════
+  // EASEUS — PC migration & backup
+  // ═══════════════════════════════════════
+  "easeus": { url: "https://www.anrdoezrs.net/click-101728212-15398435", fallback: "https://easeus.com" },
+  "easeus-backup": { url: "https://www.jdoqocy.com/click-101728212-15398448", fallback: "https://easeus.com" },
 }
 
 export function getAffiliateUrl(slug: string) {
