@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import { Inter, JetBrains_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import { GoogleAnalytics } from "@next/third-parties/google"
 import { SkipNav } from "@/components/skip-nav"
 import { CookieBanner } from "@/components/cookie-banner"
 import Script from "next/script"
@@ -75,6 +76,7 @@ export default function RootLayout({
         <CookieBanner />
         <Analytics />
         <SpeedInsights />
+        <GoogleAnalytics gaId="G-M9S2CDQKML" />
       </body>
     </html>
   )
