@@ -16,7 +16,7 @@ function Stars({ rating }: { rating: number }) {
   const half = rating - full >= 0.5
   const empty = 5 - full - (half ? 1 : 0)
   return (
-    <span className="inline-flex items-center gap-0.5" aria-label={`Rating ${rating} out of 5`}>
+    <span role="img" className="inline-flex items-center gap-0.5" aria-label={`Rating ${rating} out of 5`}>
       {Array.from({ length: full }).map((_, i) => (
         <svg key={`f${i}`} width="14" height="14" viewBox="0 0 14 14" fill="#00FF88">
           <path d="M7 1l1.8 4H13l-3.3 2.6L11 12 7 9.5 3 12l1.3-4.4L1 5h4.2z" />
@@ -46,7 +46,7 @@ export function EaseusProductCard({ slug, name, description, badge, rating, cta 
   return (
     <div className="flex flex-col p-6 rounded-2xl bg-[#0D1117] border border-[#00FF8820] hover:border-[#00FF8860] transition-all duration-300 hover:shadow-[0_0_30px_#00FF8815]">
       <div className="inline-flex self-start items-center gap-2 px-3 py-1 rounded-full bg-[#A855F720] border border-[#A855F740] mb-4">
-        <span className="text-[10px] text-[#A855F7] font-mono uppercase tracking-wider">{badge}</span>
+        <span className="text-[10px] text-[#DDD6FE] font-mono uppercase tracking-wider">{badge}</span>
       </div>
       <h3 className="text-lg font-bold text-[#F0FDF4] mb-2">{name}</h3>
       <p className="text-sm text-[#94A3B8] leading-relaxed mb-4 flex-1">{description}</p>

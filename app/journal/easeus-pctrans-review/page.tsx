@@ -181,7 +181,7 @@ export default function EaseusPCTransReviewPage() {
 
           <div className="mt-12 pt-8 border-t border-white/10">
             <p className="text-sm text-[#94A3B8]">
-              Reviewed by <Link href="/authors/thomas" className="text-[#00FF88]">Thomas</Link> &amp; <Link href="/authors/oyvind" className="text-[#00FF88]">Øyvind</Link> — NorwegianSpark | Last updated: April 2026
+              Reviewed by <Link href="/authors/thomas" className="text-[#00FF88] underline">Thomas</Link> &amp; <Link href="/authors/oyvind" className="text-[#00FF88] underline">Øyvind</Link> — NorwegianSpark | Last updated: April 2026
             </p>
           </div>
 
